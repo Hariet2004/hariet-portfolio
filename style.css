@@ -197,22 +197,22 @@ h2::before {
   letter-spacing: -0.02em;
 }
 
-.hero-role {
-  color: var(--accent2);
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin-bottom: 18px;
+.hero-roles {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
+  margin-bottom: 18px;
 }
 
-.hero-role::before {
-  content: '';
-  width: 20px; height: 2px;
-  background: var(--accent2);
-  border-radius: 1px;
-  display: inline-block;
+.hero-roles span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent2);
+  border: 1.5px solid rgba(167,139,250,0.35);
+  padding: 4px 14px;
+  border-radius: 20px;
+  background: rgba(124,58,237,0.08);
+  letter-spacing: 0.02em;
 }
 
 .hero-bio {
