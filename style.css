@@ -198,36 +198,10 @@ h2::before {
 
 .hero-inner {
   display: flex;
-  align-items: center;
-  gap: 56px;
+  align-items: flex-start;
   position: relative;
   z-index: 1;
-}
-
-.hero-photo-wrap {
-  flex-shrink: 0;
-  position: relative;
-}
-
-.hero-photo-wrap::before {
-  content: '';
-  position: absolute;
-  inset: -4px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
-  z-index: 0;
-}
-
-.hero-photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: top center;
-  display: block;
-  position: relative;
-  z-index: 1;
-  border: 3px solid var(--bg);
+  max-width: 640px;
 }
 
 .hero-text { flex: 1; min-width: 0; }
@@ -797,7 +771,6 @@ footer {
   .hero-bio { margin-inline: auto; }
   .hero-links { justify-content: center; }
   .hero-socials { justify-content: center; }
-  .hero-photo { width: 160px; height: 160px; }
 
   .skills-grid { grid-template-columns: 1fr; }
   .contact-links { grid-template-columns: 1fr; }
